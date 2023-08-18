@@ -1,0 +1,45 @@
+#certificates .content {
+  background-color: var(--dark_1);
+  padding-bottom: 60px;
+}
+
+#certificates .slide-container {
+  overflow-x: auto;
+  padding-bottom: 30px;
+  scrollbar-width: 100px;
+  scrollbar-color: var(--dark_2) var(--neutral);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+#certificates .slide-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+#certificates .slide-container::-webkit-scrollbar-track {
+  background: var(--dark_2);
+  border-radius: 10px;
+}
+
+
+#certificates .slide-container::-webkit-scrollbar-thumb {
+  position: absolute;
+  background-color: var(--neutral);
+  border-radius: 10px;
+  outline: 1px solid var(--neutral);
+  border: 2px solid var(--neutral);
+}
+
+
+
+#certificates .certificates {
+
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  width: max-content;
+  padding: 20px 30px 10px 30px;
+  position: relative;
+}

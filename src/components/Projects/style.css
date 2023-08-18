@@ -1,0 +1,90 @@
+#projects .content {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+
+#projects .cards-container {
+  width: 500px;
+  height: 450px;
+}
+
+#projects .cards-container {
+  position: relative;
+  z-index: 0;
+
+
+}
+
+:root {
+  --animation-time: 0.4s;
+}
+
+#projects .cards-container > div{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--animation-time);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+#projects .cards-container > div {
+  transform: translateX(-50%) scale(0.4);
+  z-index: 0;
+}
+
+#projects .cards-container .left,
+#projects .cards-container .right{
+  display: block;
+  opacity: 1;
+  filter: blur(1px) brightness(0.5);
+  user-select: none;
+  transition: var(--animation-time);
+  z-index: 1;
+}
+
+#projects .cards-container .left{
+  transform: translateX(-85%) scale(0.7) translateY(20px);
+}
+
+#projects .cards-container .right{
+  transform: translateX(-15%) scale(0.7) translateY(20px);
+}
+
+#projects .cards-container .selected{
+  display: block;
+  transition: var(--animation-time);
+  opacity: 1;
+  z-index: 2;
+  border-radius: 15px;
+  transform: translateX(-50%) scale(0.97);
+}
+
+
+
+@media (min-width: 834px) {
+  #projects .cards-container .selected:hover{
+    display: block;
+    transition: var(--animation-time);
+    opacity: 1;
+    z-index: 2;
+    box-shadow: 0 0 8px var(--neon);
+    transform: translateX(-50%) translateY(-10px) scale(1);
+  }
+}
+
+@media (max-width: 550px) {
+  #projects .cards-container .left{
+    transform: translateX(-65%) scale(0.8) translateY(20px);
+  }
+  
+  #projects .cards-container .right{
+    transform: translateX(-35%) scale(0.8) translateY(20px);
+  }
+}

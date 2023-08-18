@@ -1,0 +1,135 @@
+.icon.home {
+  mask-image: url('/svg/menu/home.svg');
+  -webkit-mask-image: url('/svg/menu/home.svg');
+  transform: scale(0.9);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.about {
+  mask-image: url('/svg/menu/about.svg');
+  -webkit-mask-image: url('/svg/menu/about.svg');
+  transform: scale(0.77);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.projects {
+  mask-image: url('/svg/menu/project.svg');
+  -webkit-mask-image: url('/svg/menu/project.svg');
+  transform: scale(0.9);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.skills {
+  mask-image: url('/svg/menu/skills.svg');
+  -webkit-mask-image: url('/svg/menu/skills.svg');
+  transform: scale(0.7);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.certificate {
+  mask-image: url('/svg/menu/certificate.svg');
+  -webkit-mask-image: url('/svg/menu/certificate.svg');
+  transform: scale(0.9);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.contact {
+  mask-image: url('/svg/menu/contact.svg');
+  -webkit-mask-image: url('/svg/menu/contact.svg');
+  transform: scale(0.7);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.instagram {
+  mask-image: url('/svg/social/instagram.svg');
+  -webkit-mask-image: url('/svg/social/instagram.svg');
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.linkedin {
+  mask-image: url('/svg/social/linkedin.svg');
+  -webkit-mask-image: url('/svg/social/linkedin.svg');
+  transform: scale(0.9);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.github {
+  mask-image: url('/svg/social/github.svg');
+  -webkit-mask-image: url('/svg/social/github.svg');
+  transform: scale(0.95);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.react {
+  mask-image: url('/svg/techs/react.svg');
+  -webkit-mask-image: url('/svg/techs/react.svg');
+  transform: scale(0.95);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.node {
+  mask-image: url('/svg/techs/node.svg');
+  -webkit-mask-image: url('/svg/techs/node.svg');
+  transform: scale(0.8);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.java {
+  mask-image: url('/svg/techs/java.svg');
+  -webkit-mask-image: url('/svg/techs/java.svg');
+  transform: scale(0.8);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.sql {
+  mask-image: url('/svg/techs/sql.svg');
+  -webkit-mask-image: url('/svg/techs/sql.svg');
+  transform: scale(0.8);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+
+.icon.calendar {
+  mask-image: url('/svg/general/calendar.svg');
+  -webkit-mask-image: url('/svg/general/calendar.svg');
+  transform: scale(0.8);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.clock {
+  mask-image: url('/svg/general/clock.svg');
+  -webkit-mask-image: url('/svg/general/clock.svg');
+  transform: scale(0.8);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.person {
+  mask-image: url('/svg/general/person.svg');
+  -webkit-mask-image: url('/svg/general/person.svg');
+  transform: scale(0.8);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.icon.school {
+  mask-image: url('/svg/general/school.svg');
+  -webkit-mask-image: url('/svg/general/school.svg');
+  transform: scale(0.8);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}

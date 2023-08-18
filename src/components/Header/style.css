@@ -1,0 +1,298 @@
+/* HEADER */
+.v-space-60 {
+  height: 60px;
+}
+
+header {
+  background-color: var(--black);
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0px 0px 4px var(--neutral);
+  z-index: 1000;
+}
+
+header .center {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+header .logo {
+  font-weight: 500;
+  font-size: 34px;
+  cursor: default;
+  user-select: none;
+  cursor: pointer;
+}
+
+header .logo_symbol {
+  color: var(--neutral);
+}
+
+header .logo_text {
+  color: var(--light);
+  text-shadow: 0 0 8px var(--light);
+
+}
+
+/* NAV */
+header nav {
+  display: flex;
+  gap: 22px;
+}
+
+/* BIG NAV */
+
+header nav.big_nav a{
+  font-size: 18px;
+  color: var(--neutral);
+  transition: 0.4s;
+  font-weight: 500;
+}
+
+header nav.big_nav a:hover{
+  color: var(--light);
+  text-shadow: 0 0 8px var(--light);
+}
+
+/* SMALL NAV */
+header nav.small_nav {
+  display: none;
+  gap: 24px;
+  
+}
+
+
+header nav a .icon{
+  color: var(--neutral);
+
+  font-size: 19px;
+
+  transition: 0.4s;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav a .icon:hover{
+  transform: translateY(-2px);
+  color: var(--light);
+}
+
+
+
+/* MOBILE NAV */
+
+header .mobile_menu {
+  display: none;
+}
+
+header .mobile_menu .menu nav{
+  border: 1px solid var(--light);
+  border-top: 0;
+}
+
+header .mobile_menu.closed .menu nav{
+  right: -70px;
+}
+
+
+
+header .mobile_menu .button{
+  width: 40px;
+  transform: scale(0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+
+header .mobile_menu .menu nav{
+  box-sizing: content-box;
+  transition: 0.4s;
+
+  width: 64px;
+  height: 300px;
+
+  background-color: var(--dark_2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 22px;
+
+  position: absolute;
+  right: -2px;
+  top: 60px;
+
+  border-radius: 0 0 0 70px;
+  padding-bottom: 30px;
+
+  
+  
+}
+ 
+header .mobile_menu nav a .icon{
+  transition: 0.4s;
+  width: 30px;
+  height: 30px;
+}
+
+/* header .mobile_menu a {
+  transition: 0.4s;
+} */
+
+
+
+
+
+
+
+header .btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  left: -11px;
+  cursor: pointer;
+  transform: scale(0.5);
+  transition: 0.4s;
+}
+
+header .btn-left {
+  background-color: var(--neutral);
+  position: absolute;
+  height: 8px;
+  width: 30px;
+  top: 30px;
+  left: 1px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+header .btn-left:before {
+  background-color: var(--neutral);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: -20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+header .btn-left:after {
+  background-color: var(--neutral);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: 20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+header .btn-right {
+  background-color: var(--neutral);
+  position: absolute;
+  height: 8px;
+  width: 30px;
+  top: 30px;
+  left: 30px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+header .btn-right:before {
+  background-color: var(--neutral);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: -20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+header .btn-right:after {
+  background-color: var(--neutral);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: 20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+header .active .btn-left {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+header .active .btn-left:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+  transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+}
+header .active .btn-left:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+  transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+}
+header .active .btn-right {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+header .active .btn-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+  transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+}
+header .active .btn-right:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+  transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+}
+
+header .active .btn-left:before,
+/* .active .btn-left, */
+header .active .btn-left:after,
+/* .active .btn-right, */
+header .active .btn-right:before,
+header .active .btn-right:after {
+  background-color: var(--light);
+}
+
+header .btn.active {
+  filter: drop-shadow(0 0 4px var(--light));
+}
+  
+
+
+
+
+@media (max-width: 834px) {
+  header nav.small_nav {
+    display: flex;
+  }
+
+  header nav.big_nav {
+    display: none;
+  } 
+}
+
+@media (max-width: 550px) {
+  header nav.small_nav {
+    display: none;
+  }
+
+  header nav.big_nav {
+    display: none;
+  } 
+
+  header .mobile_menu{
+    display: flex;
+  }
+}

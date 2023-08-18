@@ -1,0 +1,80 @@
+.certificateCard {
+  background-color: var(--neutral);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  height: 350px;
+  width: 270px;
+  position: relative;
+  box-shadow: 0 0 8px var(--dark_2);
+  transition: 0.4s;
+}
+
+.certificateCard .infos {
+  padding: 15px 5px;
+}
+
+.certificateCard h3{
+  font-size: 20px;
+  color: var(--light);
+  font-weight: 600;
+  border-bottom: 1px solid var(--dark_1);
+  padding-bottom: 22px;
+}
+
+.certificateCard .single-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.certificateCard .icon-box {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  /* background-color: var(--white); */
+}
+
+.certificateCard .icon-box .icon {
+  line-height: 30px;
+  color: var(--dark_2);
+}
+
+.certificateCard .icon-box .icon.clock {
+  scale: 0.7;
+}
+
+.certificateCard .icon-box .icon.person {
+  scale: 0.9;
+}
+
+.certificateCard .icon-box .icon.calendar {
+  scale: 0.66 ;
+}
+
+.certificateCard  span{
+  display: inline-block;
+  color: var(--white);
+}
+
+.certificateCard a {
+  bottom: 10;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.certificateCard button {
+  background-color: var(--dark_2);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width: 834px) {
+  .certificateCard:hover {
+    box-shadow: 0 0 8px var(--neon);
+    transform: translateY(-5px) scale(1.03);
+  }
+}
