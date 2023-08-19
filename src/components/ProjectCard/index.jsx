@@ -28,9 +28,9 @@ export default function ProjectCard({ data }) {
         </div>
         <div className="buttons">
           {
-            data.app_url && <a href={data.app_url}><button className="light">ACESSAR</button></a>
+            data.app_url && <a href={data.app_url} target='_blank'><button className="light">ACESSAR</button></a>
           }
-          <a href={data.rep_url}><button className="dark">REPOSITÓRIO</button></a>
+          <a href={data.rep_url}><button className="dark" target="_blank">REPOSITÓRIO</button></a>
         </div>
       </div>
     </div>
