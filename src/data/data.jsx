@@ -80,13 +80,13 @@ const data = {
     email: "richardy.tanure@hotmail.com"
   },
   page: {
-    repository_url: "https://github.com/rTanure/homePage"
+    repository_url: "https://github.com/rTanure/home-page"
   },
   projects: [
     {
       title: "Página Pessoal",
       description: "Página pessoal criada utilizando React e publicada na vercel para compartilhar projetos, certificados e diversas outras informações sobre mim.",
-      rep_url: "https://github.com/rTanure/homePage",
+      rep_url: "https://github.com/rTanure/home-page",
       app_url: "https://richardytanure.com",  
       techs: [
         "HTML",
