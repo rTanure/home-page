@@ -84,71 +84,30 @@ const data = {
   },
   projects: [
     {
-      title: "Página Pessoal",
+      title: "Portfólio",
       description: "Página pessoal criada utilizando React e publicada na vercel para compartilhar projetos, certificados e diversas outras informações sobre mim.",
       rep_url: "https://github.com/rTanure/home-page",
       app_url: "https://richardytanure.com",  
       techs: [
         "HTML",
         "CSS",
-        "JavaScript",
         "ReactJS",
-        "Vercel"
       ],
-      status: "EM ANDAMENTO",
+      status: "FINALIZADO",
       thumb: "homePage.png",
     },
     {
-      title: "Game Of Life",
-      description: "Desenvolvido pelo matemático John Horton Conway, o jogo da vida é a simulação de como um sistema complexo pode ser formado a partir de elementos mais simples.",
-      rep_url: "https://github.com/rTanure/GameOfLife",
-      app_url: "https://rtanure.github.io/GameOfLife/",  
+      title: "Grade UFOP",
+      description: "Aplicação em React que possui uma base de dados de alguns cursos da UFOP e retorna a grade curricular interativa que apresenta as relações entre as disciplinas.",
+      rep_url: "https://github.com/rTanure/gradeUfop",
+      app_url: "https://gradeufop.richardytanure.com/",  
       techs: [
         "HTML",
         "CSS",
-        "JavaScript"
+        "React"
       ],
       status: "FINALIZADO",
-      thumb: "gameOfLife.png",
-    },
-    {
-      title: "Snake Game",
-      description: "Usando as setas direcionais do teclado, movimente a cobra em direção às comidas espalhadas pelo mapa evitando de chocar contra o seu proprio corpo.",
-      rep_url: "https://github.com/rTanure/SnakeGame",
-      app_url: "https://rtanure.github.io/SnakeGame/",  
-      techs: [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      status: "FINALIZADO",
-      thumb: "snakeGame.png",
-    },
-    {
-      title: "Fractal Tree",
-      description: "Algoritmo que cria uma árvore formada por galhos vindos de um tronco principal que é dividido até o limite estabelecido no algoritmo, acrescentando uma angulação entre cada novo par.",
-      rep_url: "https://github.com/rTanure/FractalTree",
-      app_url: "https://rtanure.github.io/FractalTree/",  
-      techs: [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      status: "FINALIZADO",
-      thumb: "fractalTree.png",
-    },
-    {
-      title: "Calculadora",
-      description: "Calculadora simples desenvolvida em JavaScript e renderizada com elementos HTML/CSS. Possui as operaçãoes soma, subtração, multiplacaçãoe e divisão, alem da capacidade de multiplas operações sequenciais.",
-      rep_url: "https://github.com/rTanure/calculator",
-      app_url: "https://rtanure.github.io/calculator/",  
-      techs: [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      status: "FINALIZADO",
-      thumb: "calculadora.png",
+      thumb: "gradeUfop.png",
     },
   ]
 }
