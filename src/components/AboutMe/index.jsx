@@ -2,7 +2,7 @@ import VscodeIcon from '/svg/social/vscode.svg'
 
 import Title from '../Title'
 
-import Icon from '../../icons'
+import Icon from '../Icon'
 
 import './style.css'
 

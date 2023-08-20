@@ -1,11 +1,12 @@
 import { useState, useRef, useEffect } from 'react'
 
-import Icon from '../../icons'
+import Icon from '../Icon'
 
 import './style.css'
 
 import data from '../../data/data'
 import Title from '../Title'
+import { icon } from '@fortawesome/fontawesome-svg-core'
 
 export default function Abilities() {
   const [touchStartX, settouchStartX] = useState(undefined)
@@ -64,21 +65,11 @@ export default function Abilities() {
 
   function getClassBySelection(index) {
     switch(index) {
-      case techViewOrder.left_2:
-        return 'left_2'
-        break
-      case techViewOrder.left_1:
-        return 'left_1'
-        break
-      case techViewOrder.select:
-        return 'selected'
-        break
-      case techViewOrder.right_1:
-        return 'right_1'
-        break
-      case techViewOrder.right_2:
-        return 'right_2'
-        break
+      case techViewOrder.left_2: return 'left_2'
+      case techViewOrder.left_1: return 'left_1'
+      case techViewOrder.select: return 'selected'
+      case techViewOrder.right_1: return 'right_1'
+      case techViewOrder.right_2: return 'right_2'
       default:
         if(index < techViewOrder.left_2) {
           return 'left'
@@ -119,10 +110,12 @@ export default function Abilities() {
                   {
                     data.techs.map((tech, index) => {
                       return (
+
                         <div className={`tech-logo ${getClassBySelection(index)}`} 
                         // onClick={() => selectByIndex(index)}
                         >
-                          <i className={"icon " + tech.icon_class}></i>
+                            <Icon type={tech.icon_class}/>                       
+                          {/* <i className={"icon " + tech.icon_class}></i> */}
                         </div>
                       )
                     })
