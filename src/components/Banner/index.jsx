@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import data from '../../data/data'
 
 import './style.css'
+import Icon from '../Icon'
 
 import ProfilePicture from '/img/perfil.png'
 
