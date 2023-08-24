@@ -19,8 +19,7 @@ export default function AboutMe() {
             
           </div>
           <div className="right">
-            <Icon name="code"/>
-          
+            <Icon type="tech-react"/>
           </div>
 
         </div>

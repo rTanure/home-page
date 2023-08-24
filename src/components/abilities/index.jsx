@@ -6,7 +6,6 @@ import './style.css'
 
 import data from '../../data/data'
 import Title from '../Title'
-import { icon } from '@fortawesome/fontawesome-svg-core'
 
 export default function Abilities() {
   const [touchStartX, settouchStartX] = useState(undefined)
@@ -133,8 +132,7 @@ export default function Abilities() {
                 </div>
                 <div className="infos">
                   <div className="logo-icon">
-                    <div className={`icon ${data.techs[selected].id}`}></div>
-                    <i className={"icon " + data.techs[selected].icon_class}></i>
+                    <Icon type={data.techs[selected].icon_class}/>
                   </div>
                   <div className="description">
                     <p>{data.techs[selected].description}</p>

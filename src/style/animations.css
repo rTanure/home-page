@@ -18,13 +18,13 @@
 
 @keyframes wave {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-5px);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-5px);
   }
 }
 

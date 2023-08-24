@@ -127,11 +127,16 @@
   text-shadow: 0 0 6px var(--neon);
 }
 
-#abilities .logo-icon .icon{
-  font-size: 200px;
-  color: var(--light);
+#abilities .logo-icon svg{
+  width: 200px;
+ 
   animation: wave 6s infinite ease-in-out;
   /* transition: 0.4s; */
+}
+
+#abilities .logo-icon svg *{
+  fill: var(--light);
+  stroke: var(--light);
 }
 
 #abilities .description p {
