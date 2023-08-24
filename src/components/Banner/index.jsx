@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 
 import data from '../../data/data'
 
+import Anchor from '../Anchor'
+
 import './style.css'
-import Icon from '../Icon'
 
 import ProfilePicture from '/img/perfil.png'
 
@@ -21,6 +22,7 @@ export default function Banner() {
 
   return(
     <div id='home'>
+      <Anchor componentId="home-anchor"/>
       <div className="center">
         <div className="content">
           <div className="left">

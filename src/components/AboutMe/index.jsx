@@ -1,6 +1,7 @@
 import VscodeIcon from '/svg/social/vscode.svg'
 
 import Title from '../Title'
+import Anchor from '../Anchor'
 
 import Icon from '../Icon'
 
@@ -9,6 +10,7 @@ import './style.css'
 export default function AboutMe() {
   return (
     <div id="about_me">
+      <Anchor componentId="about-anchor"/>
       <div className="center">
         <Title value="SOBRE MIM" />
         <div className="content">

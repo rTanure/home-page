@@ -6,6 +6,7 @@ import './style.css'
 
 import data from '../../data/data'
 import Title from '../Title'
+import Anchor from '../Anchor'
 
 export default function Abilities() {
   const [touchStartX, settouchStartX] = useState(undefined)
@@ -93,6 +94,7 @@ export default function Abilities() {
 
   return (
     <div id="abilities">
+      <Anchor componentId="abilities-anchor"/>
       <div className="content">
         <div className="center">
           <Title value="Habilidades" /> 

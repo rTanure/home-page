@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 
 import Title from '../Title'
 import ProjectCard from '../ProjectCard'
+import Anchor from '../Anchor'
 
 import './style.css'
 
@@ -96,7 +97,8 @@ export default function Projects() {
   }
   
   return (
-    <div id="projects">
+    <div className='projects'>
+      <Anchor componentId="projects-anchor"/>
       <div className="center">
         <Title value="PROJETOS"/>
         <div className="content">
