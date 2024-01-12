@@ -2,14 +2,12 @@ import './style.css'
 
 import Title from '../Title'
 import CertificateCard from '../CertificateCard'
-import Anchor from '../Anchor'
 
 import data from '../../data/data'
 
 export default function Courses() {
   return (
     <div id="certificates">
-      <Anchor componentId="certificates-anchor"/>
       <div className="content">
         <div className="center">
           <Title value="certificados" />

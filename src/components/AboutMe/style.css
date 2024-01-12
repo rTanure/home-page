@@ -35,17 +35,10 @@
   
 }
 
-#about_me .content .right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #about_me .content svg{
-  margin: 0 auto;
-  width: 240px;
-  fill: var(--neon);
-  animation: wave 5s  infinite ease-in-out;
+  font-size: 200px;
+  color: var(--light);
+  animation: neon 3s  infinite ease-in-out;
 }
 
 #about_me span.mark {

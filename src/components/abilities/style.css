@@ -31,14 +31,17 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: var(--size);
+  font-size: var(--size);
   transform: translate(-50%, -50%);
   transition: 0.3s;
-  text-align: center;
 }
-#abilities .logos .tech-logo svg{
+
+#abilities .logos .icon {
+  width: 100%;
+  height: 100%;
   transition: 0.3s;
 }
+
 
 
 #abilities .tech-logo.right_1{
@@ -59,45 +62,33 @@
   left: calc(50% - var(--space_2));
 }
 
-#abilities .tech-logo.left_1 svg,
-#abilities .tech-logo.right_1 svg {
-  width:  calc(var(--size) * 0.8);
-}
-
-#abilities .tech-logo.left_2 svg,
-#abilities .tech-logo.right_2 svg {
-  width:  calc(var(--size) * 0.4);
+#abilities .tech-logo.left_2 .icon,
+#abilities .tech-logo.right_2 .icon {
+  transform: scale(0.5);
   opacity: 0.6;
 }
 
-#abilities .tech-logo.left svg,
-#abilities .tech-logo.right svg{  
-  width: 0;
-  opacity: 0;
-}
 
 #abilities .logos .tech-logo > * {
   transform: scale(0.75);
   opacity: 0.9;
+  color: var(--dark_2);
 }
 
-#abilities .tech-logo svg *{
-  stroke: var(--dark_2);
-  fill: var(--dark_2);
+#abilities .tech-logo.left .icon,
+#abilities .tech-logo.right .icon{  
+  transform: scale(0);
+  opacity: 0;
 }
-
 
 #abilities .tech-logo.selected {
+  text-shadow: 0 0 10px var(--neon);
   z-index: 2;
 }
 
-#abilities .tech-logo.selected svg{
-  width: calc(var(--size) * 1.1);
-}
-
-#abilities .tech-logo.selected svg *{
-  stroke: var(--light);
-  fill: var(--light);
+#abilities .tech-logo.selected .icon{
+  color: var(--light);
+  transform: scale(0.9);
 }
 
 #abilities .tech_info {
@@ -127,16 +118,11 @@
   text-shadow: 0 0 6px var(--neon);
 }
 
-#abilities .logo-icon svg{
-  width: 200px;
- 
+#abilities .logo-icon .icon{
+  font-size: 200px;
+  color: var(--light);
   animation: wave 6s infinite ease-in-out;
   /* transition: 0.4s; */
-}
-
-#abilities .logo-icon svg *{
-  fill: var(--light);
-  stroke: var(--light);
 }
 
 #abilities .description p {

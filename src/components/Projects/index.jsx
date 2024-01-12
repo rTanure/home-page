@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 
 import Title from '../Title'
 import ProjectCard from '../ProjectCard'
-import Anchor from '../Anchor'
 
 import './style.css'
 
@@ -97,32 +96,35 @@ export default function Projects() {
   }
   
   return (
-    <div className='projects'>
-      <Anchor componentId="projects-anchor"/>
+    <div id="projects">
       <div className="center">
         <Title value="PROJETOS"/>
         <div className="content">
-          <div className="left-arrow arrow" onClick={()=> previousCard()}>
-            <span>←</span>
+          <div className="carousel">
+
+            <div className="left-arrow arrow" onClick={()=> previousCard()}>
+              <span>←</span>
+            </div>
+            <div className="cards-container" 
+                onTouchStart={(e) => settouchStartX(e.touches[0].clientX)} 
+                onTouchMove={(e) => setTouchEndX(e.touches[0].clientX)}
+                onTouchEnd={() => calcTouchEvent()}
+              >
+              {
+                indexList.map((index, id)=>{
+                  return (
+                    <div className={`card-box ${id === selected ? "selected" : ""} ${id === leftCard ? "left" : ""} ${id === rightCard ? "right" : ""}`}>
+                      <ProjectCard data = { projects[index] }/>
+                    </div>
+                  )
+                })  
+              }
+            </div>
+            <div className="right-arrow arrow" onClick={()=> nextCard()}>
+              <span>→</span>
+            </div>
           </div>
-          <div className="cards-container" 
-              onTouchStart={(e) => settouchStartX(e.touches[0].clientX)} 
-              onTouchMove={(e) => setTouchEndX(e.touches[0].clientX)}
-              onTouchEnd={() => calcTouchEvent()}
-            >
-            {
-              indexList.map((index, id)=>{
-                return (
-                  <div className={`card-box ${id === selected ? "selected" : ""} ${id === leftCard ? "left" : ""} ${id === rightCard ? "right" : ""}`}>
-                    <ProjectCard data = { projects[index] }/>
-                  </div>
-                )
-              })  
-            }
-          </div>
-          <div className="right-arrow arrow" onClick={()=> nextCard()}>
-            <span>→</span>
-          </div>
+          <a href="/projects"><button className='light'>VEJA MAIS PROJETOS</button></a>
         </div>
       </div>
     </div>

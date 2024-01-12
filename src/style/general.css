@@ -62,11 +62,3 @@ ul {
     border-radius: 4px;
     border: 1px solid var(--dark_2);
   }
-
-  svg.stroke * {
-    fill: transparent !important;
-  }
-
-  svg.fill * {
-    stroke: transparent !important;
-  }

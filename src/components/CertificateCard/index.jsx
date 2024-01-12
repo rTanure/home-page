@@ -1,7 +1,7 @@
 import './style.css'
 
 export default function CertificateCard({data}) {
-  const { title, school, time, instructor, conclusion, certificate_url } = data
+  const { title, school, time, instructor, conclusion, certificate } = data
   return (
     <div className='certificateCard'>
       <div className="title">
@@ -33,7 +33,7 @@ export default function CertificateCard({data}) {
           <span>{conclusion}</span>
         </div>
       </div>
-      <a href={certificate_url} target='_blank'>
+      <a href={certificate} target='_blank'>
         <button>certificado</button>
       </a>
     </div>
