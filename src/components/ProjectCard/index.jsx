@@ -4,12 +4,9 @@ export default function ProjectCard({ data }) {
   return (
     <div className="project-card">
       <div className="thumb" style={{
-        backgroundImage: `url(/img/projects/${data.thumb})`
+        backgroundImage: `url(${data.thumb})`
       }}>
         <div className="background">
-        </div>
-        <div className="status">
-          <span>{ data.status }</span>
         </div>
       </div>
       <div className="data">

@@ -144,7 +144,7 @@ const data = {
       app_url: "https://richardytanure.com",  
       techs: [ "HTML", "CSS", "ReactJS", ],
       status: "FINALIZADO",
-      thumb: "homePage.png",
+      thumb: "/img/projects/homePage.png",
     },
     {
       title: "Grade UFOP",
@@ -153,8 +153,33 @@ const data = {
       app_url: "https://gradeufop.richardytanure.com/",  
       techs: [ "HTML", "CSS", "React" ],
       status: "FINALIZADO",
-      thumb: "gradeUfop.png",
+      thumb: "/img/projects/gradeUfop.png",
     },
+    {
+      title: "Clone Netflix",
+      description: "Clone da interface principal da netflix construída em React e utilizando o Redux para controlar estados globais da interface",
+      rep_url: "https://github.com/rTanure/react-clone-netflix",
+      app_url: "https://netflix.richardytanure.com/",  
+      techs: [ "HTML", "CSS", "React", "Redux" ],
+      status: "FINALIZADO",
+      thumb: "/img/projects/netflix-clone.png",
+    },
+    {
+      title: "Loja Redux",
+      description: "Interface simples de uma loja virtual aplicando redux toolkit para manipular os itens do carrinho",
+      rep_url: "https://github.com/rTanure/react-redux",
+      app_url: "https://loja-redux.richardytanure.com/",  
+      techs: [ "HTML", "CSS", "React", "Redux" ],
+      thumb: "/img/projects/loja-redux.png",
+    },
+    // {
+    //   title: "Loja Redux",
+    //   description: "Interface simples de uma loja virtual aplicando redux toolkit para manipular os itens do carrinho",
+    //   rep_url: "",
+    //   app_url: "",  
+    //   techs: [ "HTML", "CSS", "React", "Redux" ],
+    //   thumb: "/img/projects/loja-redux.png",
+    // },
   ]
 }
 
