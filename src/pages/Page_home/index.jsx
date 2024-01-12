@@ -6,7 +6,7 @@ import Abilities from "../../components/abilities"
 import Courses from "../../components/Courses"
 import Footer from "../../components/Footer"
 
-export default function Home() {
+export default function Page_home() {
   return (
     <div>
       <Header />
