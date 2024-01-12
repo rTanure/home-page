@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 
 import data from '../../data/data'
 
+import Anchor from '../Anchor'
+
 import './style.css'
 
 import ProfilePicture from '/img/perfil.png'
@@ -20,6 +22,7 @@ export default function Banner() {
 
   return(
     <div id='home'>
+      <Anchor componentId="home-anchor"/>
       <div className="center">
         <div className="content">
           <div className="left">
@@ -29,6 +32,9 @@ export default function Banner() {
             </div>
             <p>Desenvolvedor Web</p>
             <div className="social">
+              <a href={data.social.instagram_url} target='_blank'>
+                <i className="icon fa-brands fa-instagram"></i>
+              </a>
               <a href={data.social.linkedin_url} target='_blank'>
                 <i className="icon fa-brands fa-linkedin"></i>
               </a>

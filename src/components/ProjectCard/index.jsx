@@ -4,9 +4,12 @@ export default function ProjectCard({ data }) {
   return (
     <div className="project-card">
       <div className="thumb" style={{
-        backgroundImage: `url(${data.thumb})`
+        backgroundImage: `url(/img/projects/${data.thumb})`
       }}>
         <div className="background">
+        </div>
+        <div className="status">
+          <span>{ data.status }</span>
         </div>
       </div>
       <div className="data">
@@ -25,9 +28,9 @@ export default function ProjectCard({ data }) {
         </div>
         <div className="buttons">
           {
-            data.app_url && <a href={data.app_url} target='blank'><button className="light">ACESSAR</button></a>
+            data.app_url && <a href={data.app_url} target='_blank'><button className="light">ACESSAR</button></a>
           }
-          <a href={data.rep_url} target='blank'><button className="dark">REPOSITÓRIO</button></a>
+          <a href={data.rep_url} target="_blank"><button className="dark">REPOSITÓRIO</button></a>
         </div>
       </div>
     </div>

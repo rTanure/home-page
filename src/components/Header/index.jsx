@@ -27,20 +27,20 @@ export default function Header() {
           </div>
           <div className="right">
             <nav className="big_nav">
-              <a href="/">Início</a>
-              <a href="/about">Sobre Mim</a>
-              <a href="/projects">Projetos</a>
-              <a href="/abilities">Habilidades</a>
-              <a href="/certificates">Certificados</a>
+              <a href="#home-anchor">Início</a>
+              <a href="#about-anchor">Sobre Mim</a>
+              <a href="#projects-anchor">Projetos</a>
+              <a href="#abilities-anchor">Habilidades</a>
+              <a href="#certificates-anchor">Certificados</a>
               {/* <a href="#">Contato</a> */}
             </nav>
             <nav className="small_nav">
 
-              <a href="/"><i className="icon fa-solid fa-house"></i></a>
-              <a href="/about"><i className="icon fa-solid fa-user"></i></a>
-              <a href="/projects"><i className="icon fa-solid fa-folder"></i></a>
-              <a href="/abilities"><i className="icon fa-solid fa-code"></i></a>
-              <a href="/certificates"><i className="icon fa-solid fa-graduation-cap"></i></a>
+              <a href="#home-anchor"><i className="icon fa-solid fa-house"></i></a>
+              <a href="#about-anchor"><i className="icon fa-solid fa-user"></i></a>
+              <a href="#projects-anchor"><i className="icon fa-solid fa-folder"></i></a>
+              <a href="#abilities-anchor"><i className="icon fa-solid fa-code"></i></a>
+              <a href="#certificates-anchor"><i className="icon fa-solid fa-graduation-cap"></i></a>
               {/* <a href="#"><div className="icon contact"></div></a> */}
             </nav>
             <div className={`mobile_menu ${mobileMenu === 1 ? "" : "closed"}`}>
@@ -52,11 +52,11 @@ export default function Header() {
               </div>
               <div className="menu">
                 <nav>
-                  <a href="/"><i className="icon fa-solid fa-house"></i></a>
-                  <a href="/about"><i className="icon fa-solid fa-user"></i></a>
-                  <a href="/projects"><i className="icon fa-solid fa-folder"></i></a>
-                  <a href="/abilities"><i className="icon fa-solid fa-code"></i></a>
-                  <a href="/certificates"><i className="icon fa-solid fa-graduation-cap"></i></a>
+                  <a href="#home-anchor"><i className="icon fa-solid fa-house"></i></a>
+                  <a href="#about-anchor"><i className="icon fa-solid fa-user"></i></a>
+                  <a href="#projects-anchor"><i className="icon fa-solid fa-folder"></i></a>
+                  <a href="#abilities-anchor"><i className="icon fa-solid fa-code"></i></a>
+                  <a href="#certificates-anchor"><i className="icon fa-solid fa-graduation-cap"></i></a>
                   {/* <a href="#"><div className="icon contact"></div></a> */}
                 </nav>
               </div>
